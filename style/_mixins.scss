@@ -1,0 +1,50 @@
+@mixin searhInput {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+@mixin categoryPics {
+    background-repeat: no-repeat;
+    width: 170px;
+    height: 70px;
+    transform: scale(0.9);
+    transition: .3s ease;
+    cursor: pointer;
+    &:hover {
+        transform: scale(1);
+    }
+}
+
+@mixin smallTextforCards {
+    font-family: Montserrat-Bold;
+    font-size: 20px;
+    color: $fadedBlack;
+}
+
+@mixin forCategories {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid $lightGrey;
+    padding-bottom: 10px;
+}
+
+@mixin categName {
+    font-family: Montserrat-Bold;
+    font-size: 15px;
+    color: $green;
+    text-transform: uppercase;
+}
+
+@mixin flex-column {
+    display: flex;
+    flex-direction: column;
+}
+
+@mixin item-center {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}

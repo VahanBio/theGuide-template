@@ -1,0 +1,1393 @@
+@font-face {
+  font-family: DMSans-Bold;
+  src: url(../fonts/DMSans-Bold.ttf);
+}
+
+@font-face {
+  font-family: DMSans-Regular;
+  src: url(../fonts/DMSans-Regular.ttf);
+}
+
+@font-face {
+  font-family: Manrope-Bold;
+  src: url(../fonts/Manrope-Bold.ttf);
+}
+
+@font-face {
+  font-family: Manrope-ExtraBold;
+  src: url(../fonts/Manrope-ExtraBold.ttf);
+}
+
+@font-face {
+  font-family: Manrope-Light;
+  src: url(../fonts/Manrope-Light.ttf);
+}
+
+@font-face {
+  font-family: Manrope-Regular;
+  src: url(../fonts/Manrope-Regular.ttf);
+}
+
+@font-face {
+  font-family: Manrope-SemiBold;
+  src: url(../fonts/Manrope-SemiBold.ttf);
+}
+
+@font-face {
+  font-family: Montserrat-Bold;
+  src: url(../fonts/Montserrat-Bold.ttf);
+}
+
+@font-face {
+  font-family: Montserrat-Regular;
+  src: url(../fonts/Montserratarm-Regular.otf);
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  overflow-x: hidden;
+}
+
+header {
+  padding: 8px 38px;
+}
+
+header .customNav .justifyEnd {
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+
+header .companyLogo {
+  position: relative;
+  cursor: pointer;
+}
+
+header .companyLogo .markerIcon {
+  position: absolute;
+  left: 45%;
+  bottom: 90%;
+}
+
+header .companyLogo .markerIcon i {
+  color: #66caf2;
+}
+
+header .companyLogo p {
+  font-family: Montserrat-Regular;
+  font-size: 35px;
+  text-transform: uppercase;
+  color: #37ab4a;
+  margin-bottom: 0px;
+  margin-top: 20px;
+  line-height: 30px;
+}
+
+header .companyLogo p:nth-child(3) {
+  font-family: Manrope-ExtraBold;
+  font-size: 10px;
+  letter-spacing: 3px;
+  color: #606060;
+  margin-bottom: 0px;
+  text-align: right;
+  margin-top: 0px;
+  line-height: 10px;
+}
+
+header .navListItems {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+header .navListItems li {
+  font-family: Manrope-ExtraBold;
+  font-size: 14px;
+  margin-left: 10px;
+}
+
+header .navListItems li .active {
+  color: #231f20 !important;
+}
+
+header .navListItems li a .downBtn {
+  font-size: 12px;
+  margin-left: 10px;
+}
+
+header .navListItems li .cartBag {
+  font-size: 25px;
+}
+
+header .navListItems select {
+  font-family: Manrope-ExtraBold;
+  font-size: 14px;
+  border: none;
+}
+
+header .navListItems select:focus {
+  outline: none;
+}
+
+.container-xxl {
+  padding-right: unset !important;
+  padding-left: unset !important;
+}
+
+.carouselSection {
+  overflow-x: hidden;
+  height: 400px;
+}
+
+.carouselSection .carousel-indicators [data-bs-target] {
+  -webkit-box-sizing: unset !important;
+          box-sizing: unset !important;
+  -webkit-box-flex: 0 !important;
+      -ms-flex: none !important;
+          flex: none !important;
+  width: 8px;
+  height: 8px !important;
+  margin-right: 3px;
+  border-radius: 5px;
+  margin-left: 3px;
+  cursor: pointer;
+  background-color: #fff;
+  background-clip: border-box;
+  border: 0;
+  -webkit-transition: all .4s ease;
+  transition: all .4s ease;
+}
+
+.carouselSection .carousel-indicators {
+  right: unset !important;
+  left: 65px;
+  bottom: 65px;
+}
+
+.carouselSection .carousel-indicators .active {
+  width: 25px !important;
+  border-radius: 5px !important;
+}
+
+.search-section {
+  position: absolute;
+  bottom: 138px;
+  left: 15%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.search-section p {
+  font-family: DMSans-Bold;
+  font-size: 42px;
+  color: white;
+  text-align: center;
+  margin-bottom: 3rem;
+  text-shadow: 0 4px 24px rgba(0, 0, 0, 0.231);
+}
+
+.search-section div .searchbar {
+  height: 75px;
+  padding: 10px 10px 10px 30px;
+  background-color: white;
+  border-radius: 25px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.search-section div .searchbar input {
+  font-family: DMSans-Regular;
+  font-size: 16px;
+  width: 270px;
+  border: none;
+}
+
+.search-section div .searchbar input:focus {
+  outline: none;
+}
+
+.search-section div .searchbar ul li {
+  font-family: Montserrat-Regular;
+  padding-right: 35px;
+  padding-left: 15px;
+}
+
+.search-section div .searchbar ul li:nth-child(2) {
+  border-left: 2px solid #dddddd;
+  border-right: 2px solid #dddddd;
+}
+
+.search-section div .searchbar ul li a i {
+  margin-right: 10px;
+}
+
+.search-section div .searchbar ul li .active {
+  color: #231f20 !important;
+}
+
+.search-section div .searchbar button {
+  background-color: #37ab4a;
+  border: none;
+  border-radius: 20px;
+  height: 57px;
+  width: 140px;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+.search-section div .searchbar button .btnElems {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.search-section div .searchbar button .btnElems i {
+  font-size: 18px;
+  color: white;
+}
+
+.search-section div .searchbar button .btnElems p {
+  font-family: Manrope-SemiBold;
+  font-size: 14px;
+  text-align: center;
+  margin-bottom: 0px;
+}
+
+.search-section div .searchbar button:hover {
+  -webkit-transform: scale(0.9);
+          transform: scale(0.9);
+}
+
+.categories {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+
+.categories .waterSport {
+  background-image: url(../assets/1.png);
+  background-repeat: no-repeat;
+  width: 170px;
+  height: 70px;
+  -webkit-transform: scale(0.9);
+          transform: scale(0.9);
+  -webkit-transition: .3s ease;
+  transition: .3s ease;
+  cursor: pointer;
+}
+
+.categories .waterSport:hover {
+  -webkit-transform: scale(1);
+          transform: scale(1);
+}
+
+.categories .aquapart {
+  background-image: url(../assets/2.png);
+  background-repeat: no-repeat;
+  width: 170px;
+  height: 70px;
+  -webkit-transform: scale(0.9);
+          transform: scale(0.9);
+  -webkit-transition: .3s ease;
+  transition: .3s ease;
+  cursor: pointer;
+}
+
+.categories .aquapart:hover {
+  -webkit-transform: scale(1);
+          transform: scale(1);
+}
+
+.categories .climbing {
+  background-image: url(../assets/3.png);
+  background-repeat: no-repeat;
+  width: 170px;
+  height: 70px;
+  -webkit-transform: scale(0.9);
+          transform: scale(0.9);
+  -webkit-transition: .3s ease;
+  transition: .3s ease;
+  cursor: pointer;
+}
+
+.categories .climbing:hover {
+  -webkit-transform: scale(1);
+          transform: scale(1);
+}
+
+.categories .hicking {
+  background-image: url(../assets/4.png);
+  background-repeat: no-repeat;
+  width: 170px;
+  height: 70px;
+  -webkit-transform: scale(0.9);
+          transform: scale(0.9);
+  -webkit-transition: .3s ease;
+  transition: .3s ease;
+  cursor: pointer;
+}
+
+.categories .hicking:hover {
+  -webkit-transform: scale(1);
+          transform: scale(1);
+}
+
+.categories .helicopter {
+  background-image: url(../assets/5.png);
+  background-repeat: no-repeat;
+  width: 170px;
+  height: 70px;
+  -webkit-transform: scale(0.9);
+          transform: scale(0.9);
+  -webkit-transition: .3s ease;
+  transition: .3s ease;
+  cursor: pointer;
+}
+
+.categories .helicopter:hover {
+  -webkit-transform: scale(1);
+          transform: scale(1);
+}
+
+.categories .zazaland {
+  background-image: url(../assets/8.png);
+  background-repeat: no-repeat;
+  width: 170px;
+  height: 70px;
+  -webkit-transform: scale(0.9);
+          transform: scale(0.9);
+  -webkit-transition: .3s ease;
+  transition: .3s ease;
+  cursor: pointer;
+}
+
+.categories .zazaland:hover {
+  -webkit-transform: scale(1);
+          transform: scale(1);
+}
+
+.marginTop {
+  margin-top: 100px;
+}
+
+.acitivty,
+.trending,
+.ratedActives {
+  margin-bottom: 50px;
+  padding-top: 50px;
+}
+
+.acitivty p,
+.trending p,
+.ratedActives p {
+  font-family: Manrope-ExtraBold;
+  font-size: 38px;
+  margin-bottom: 0px;
+}
+
+.acitivty small,
+.trending small,
+.ratedActives small {
+  font-family: Manrope-Regular;
+  color: #6e6e6e;
+}
+
+.acitivty a,
+.trending a,
+.ratedActives a {
+  font-family: Manrope-ExtraBold;
+  font-size: 15px;
+  color: #1a1a1a;
+  text-decoration: none;
+}
+
+.acitivty a:hover,
+.trending a:hover,
+.ratedActives a:hover {
+  color: inherit;
+}
+
+.marginTop .cards .card {
+  width: 18rem;
+}
+
+.cards {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+
+.cards .card {
+  border: none;
+  margin-right: 20px;
+  background-color: transparent;
+  cursor: pointer;
+}
+
+.cards .card img {
+  margin-bottom: 10px;
+  border-radius: 20px;
+  -webkit-box-shadow: 0 12px 24px 0 rgba(0, 0, 0, 0.15);
+          box-shadow: 0 12px 24px 0 rgba(0, 0, 0, 0.15);
+}
+
+.cards .card .scalhov {
+  -webkit-transition: 0.4s cubic-bezier(0.165, 0.84, 0.44, 1);
+  transition: 0.4s cubic-bezier(0.165, 0.84, 0.44, 1);
+}
+
+.cards .card .scalhov:hover {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+}
+
+.cards .card-title {
+  font-family: Manrope-Bold;
+}
+
+.cards .categ-name {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border-bottom: 1px solid #dddddd;
+  padding-bottom: 10px;
+}
+
+.cards .categ-name p {
+  margin-bottom: 0px;
+}
+
+.cards .categ-name p:first-child {
+  font-family: Montserrat-Bold;
+  font-size: 15px;
+  color: #37ab4a;
+  text-transform: uppercase;
+}
+
+.cards .categ-name p:nth-child(2) {
+  font-family: Montserrat-Bold;
+  font-size: 20px;
+  color: #1a1a1a;
+}
+
+.cards .card-text {
+  margin-top: 5px;
+  font-family: Manrope-Regular;
+  color: #6e6e6e;
+  font-size: 15px;
+}
+
+.cards .author img {
+  height: 40px;
+  width: 40px;
+  margin-bottom: 0px;
+  margin-right: 5px;
+}
+
+.cards .author p {
+  font-family: Manrope-Regular;
+  font-weight: bold;
+  display: inline-block;
+  margin-bottom: 0px;
+}
+
+.trendingSection {
+  margin-top: 60px;
+  background-color: rgba(0, 0, 0, 0.039);
+}
+
+.trendingSection .trendingicon {
+  font-size: 45px;
+  position: absolute;
+  bottom: 20px;
+  left: 80%;
+  color: white;
+}
+
+.exploreDubai:first-child {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.exploreDubai .darkOverlay {
+  background-image: linear-gradient(44.2deg, #000000 0%, rgba(0, 0, 0, 0) 100%), url(../assets/image.png);
+  height: 435px;
+  width: 1100px;
+  border-radius: 50px;
+  background-size: cover;
+}
+
+.exploreDubai .exploreView {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  position: absolute;
+  bottom: 70px;
+  left: 120px;
+  color: white;
+}
+
+.exploreDubai .exploreView p {
+  display: inline-block;
+  font-size: 35px;
+  font-family: Manrope-Bold;
+  margin-bottom: 0;
+  width: 315px;
+  line-height: 40px;
+}
+
+.exploreDubai .exploreView small {
+  font-family: Manrope-Regular;
+  font-size: 14px;
+  width: 350px;
+  height: 36px;
+  margin-top: 15px;
+  padding-right: 55px;
+  margin-bottom: 30px;
+}
+
+.exploreDubai .exploreView button {
+  background-color: #66caf2;
+  border: none;
+  border-radius: 15px;
+  color: white;
+  height: 44px;
+  width: 200px;
+}
+
+.activitiesSale {
+  margin-top: 120px;
+}
+
+.activitiesSale .saleDiscount {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  font-size: 17px;
+  font-family: Montserrat-Bold;
+  position: absolute;
+  bottom: 25px;
+  left: 75%;
+  background-color: white;
+  border-radius: 10px;
+  height: 36px;
+  width: 64px;
+}
+
+.activitiesSale .category-name {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border-bottom: 1px solid #dddddd;
+  padding-bottom: 10px;
+}
+
+.activitiesSale .category-name p {
+  margin-bottom: 0px;
+}
+
+.activitiesSale .category-name p:first-child {
+  font-family: Montserrat-Bold;
+  font-size: 15px;
+  color: #37ab4a;
+  text-transform: uppercase;
+}
+
+.activitiesSale .category-name .prices {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.activitiesSale .category-name .prices small {
+  -webkit-text-decoration-line: line-through;
+          text-decoration-line: line-through;
+  font-size: 12px;
+  font-family: Manrope-Regular;
+  margin-right: 5px;
+}
+
+.activitiesSale .category-name .prices p {
+  font-family: Montserrat-Bold;
+  font-size: 20px;
+  color: #1a1a1a;
+}
+
+.prelastSection {
+  overflow-x: hidden;
+  background-color: rgba(0, 0, 0, 0.039);
+  border-bottom: 2px solid #dddddd;
+}
+
+.imageCard {
+  -webkit-box-orient: horizontal !important;
+  -webkit-box-direction: normal !important;
+      -ms-flex-direction: row !important;
+          flex-direction: row !important;
+  margin-right: 0 !important;
+}
+
+.imageCard .rateIMG {
+  height: 400px;
+  width: 293.45px;
+  margin-right: 30px;
+  -webkit-transition: 0.9s cubic-bezier(0, 2.34, 0.36, 0.42);
+  transition: 0.9s cubic-bezier(0, 2.34, 0.36, 0.42);
+}
+
+.imageCard .rateIMG:hover {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+}
+
+.ratedCard .card-body {
+  width: 305px;
+}
+
+.ratedCard .card-body .rated-name {
+  border-bottom: 1px solid #dddddd;
+  padding-bottom: 15px;
+}
+
+.ratedCard .card-body .rated-name p {
+  margin-bottom: 0px;
+}
+
+.ratedCard .card-body .rated-name p:first-child {
+  font-family: Montserrat-Bold;
+  font-size: 15px;
+  color: #37ab4a;
+  text-transform: uppercase;
+}
+
+.ratedCard .card-body .rated-name p:nth-child(2) {
+  margin-top: 10px;
+  font-family: Montserrat-Bold;
+  font-size: 20px;
+  color: #1a1a1a;
+}
+
+.ratedCard .card-body .author {
+  margin-top: 50px;
+}
+
+footer {
+  height: 600px;
+}
+
+.flexable-items {
+  padding: 100px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.leftSide p {
+  font-size: 14px;
+  color: #1a1a1a;
+  font-family: Manrope-Regular;
+  width: 360px;
+  letter-spacing: 0.05px;
+  line-height: 19px;
+}
+
+.leftSide select {
+  height: 44px;
+  width: 212px;
+  border-radius: 10px;
+  border-color: #dddddd;
+  color: #1a1a1a;
+  padding-left: 15px;
+  margin-top: 25px;
+  margin-bottom: 100px;
+}
+
+.leftSide select:focus {
+  outline: none;
+}
+
+.leftSide .social-media {
+  list-style: none;
+  padding-left: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+.leftSide .social-media li {
+  background-color: #37ab4a;
+  height: 42px;
+  width: 42px;
+  border-radius: 10px;
+  font-size: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+.leftSide .social-media li a {
+  color: white;
+}
+
+.leftSide .social-media li:hover {
+  -webkit-transform: scale(1.2);
+          transform: scale(1.2);
+}
+
+.rightSide {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+}
+
+.rightSide .navListItems {
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+.rightSide .navListItems li {
+  font-family: Manrope-ExtraBold;
+  font-size: 14px;
+  margin-left: 15px;
+}
+
+.rightSide .navListItems li .active {
+  color: #231f20 !important;
+}
+
+.rightSide .subscribe p {
+  font-family: Manrope-ExtraBold;
+  font-size: 30px;
+  margin-top: 50px;
+  text-align: right;
+}
+
+.rightSide .subscribe .form {
+  width: 480px;
+  height: 60px;
+  border: 1px solid #dddddd;
+  border-radius: 20px;
+  padding: 10px 10px 10px 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.rightSide .subscribe .form .subfield input {
+  border: none;
+  font-family: DMSans-Regular;
+  font-size: 15px;
+}
+
+.rightSide .subscribe .form .subfield input:focus {
+  outline: none;
+}
+
+.rightSide .subscribe .form button {
+  background-color: #37ab4a;
+  color: white;
+  border: none;
+  height: 48px;
+  width: 135px;
+  border-radius: 15px;
+  font-family: Manrope-SemiBold;
+  font-size: 15px;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+.rightSide .subscribe .form button:hover {
+  -webkit-transform: scale(0.9);
+          transform: scale(0.9);
+}
+
+.rightSide .lastText {
+  font-size: 16px;
+  color: #6e6e6e;
+  line-height: 20px;
+  width: 290px;
+  text-align: right;
+  margin-top: 25px;
+}
+
+.last-footerText {
+  margin: 0 100px;
+  padding: 40px 0;
+  border-top: 2px solid #dddddd;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-size: 13px;
+  font-family: Manrope-Regular;
+  color: #272727;
+}
+
+.last-footerText a {
+  color: #272727;
+  text-decoration: none;
+  margin-right: 15px;
+}
+
+.last-footerText a:hover {
+  color: inherit;
+}
+
+@media only screen and (max-width: 960px) {
+  .search-section {
+    left: 5%;
+    bottom: 110px;
+  }
+  .search-section p {
+    margin-bottom: 0;
+  }
+  .search-section .searchbar ul {
+    -ms-flex-wrap: nowrap;
+        flex-wrap: nowrap;
+  }
+  .search-section .searchbar ul li a {
+    padding: 0;
+  }
+  .cards .card {
+    width: 28rem !important;
+  }
+  .cards .card .card-body .card-title {
+    font-size: 17px;
+  }
+  .cards .card .card-body .categ-name p {
+    font-size: 12px;
+  }
+  .cards .card .card-body .card-text {
+    font-size: 10px;
+  }
+  .cards .card .card-body .author p {
+    font-size: 11px;
+  }
+  .cards .card .card-body .category-name p {
+    font-size: 12px;
+  }
+  .exploreDubai .darkOverlay {
+    height: 425px;
+    width: 960px;
+  }
+  .trendingSection .trendingicon {
+    font-size: 40px;
+    left: 78%;
+  }
+  .activitiesSale .saleDiscount {
+    height: 30px;
+    width: 60px;
+    left: 70%;
+    font-size: 15px;
+  }
+  .prelastSection .cards {
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  .prelastSection .cards .imageCard .rateIMG {
+    height: 280px;
+    margin-right: 0;
+  }
+  .prelastSection .card-text {
+    font-size: 11px !important;
+  }
+  .flexable-items .leftSide .social-media {
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  .flexable-items .rightSide .subscribe p {
+    font-size: 22px;
+    margin-top: 20px;
+  }
+  .flexable-items .rightSide .subscribe .form {
+    width: 375px;
+  }
+}
+
+@media screen and (max-width: 720px) {
+  .carouselSection {
+    height: 300px;
+  }
+  .carouselSection .carousel-indicators {
+    bottom: 20px;
+  }
+  .search-section {
+    left: 10%;
+    bottom: 53px;
+  }
+  .search-section p {
+    margin-bottom: 0;
+    font-size: 28px;
+  }
+  .search-section div .searchbar {
+    width: 538px;
+    height: 60px;
+  }
+  .search-section div .searchbar input {
+    font-size: 12px;
+    width: 208px;
+  }
+  .search-section div .searchbar ul {
+    -ms-flex-wrap: nowrap;
+        flex-wrap: nowrap;
+  }
+  .search-section div .searchbar ul li {
+    padding: 0 14px;
+  }
+  .search-section div .searchbar ul li a {
+    padding: 0;
+    font-size: 8px;
+  }
+  .search-section div .searchbar ul li a i {
+    margin-right: 2px;
+  }
+  .search-section div .searchbar button {
+    height: 40px;
+    width: 70px;
+  }
+  .search-section div .searchbar button .btnElems i,
+  .search-section div .searchbar button .btnElems p {
+    font-size: 12px;
+  }
+  .categories .waterSport,
+  .categories .aquapart,
+  .categories .climbing,
+  .categories .hicking,
+  .categories .helicopter,
+  .categories .zazaland {
+    width: 188px;
+    height: 53px;
+    background-size: cover;
+  }
+  .marginTop {
+    margin-top: 50px;
+  }
+  .acitivty p,
+  .trending p {
+    font-size: 30px;
+  }
+  .acitivty small,
+  .acitivty a,
+  .trending small,
+  .trending a {
+    font-size: 13px;
+  }
+  .cards .card {
+    width: 28rem !important;
+  }
+  .cards .card .card-body .card-title {
+    font-size: 9px;
+  }
+  .cards .card .card-body .categ-name p {
+    font-size: 8px;
+  }
+  .cards .card .card-body .card-text {
+    font-size: 7px;
+  }
+  .cards .card .card-body .author img {
+    height: 20px;
+    width: 20px;
+  }
+  .cards .card .card-body .author p {
+    font-size: 9px;
+  }
+  .cards .card .card-body .category-name p {
+    font-size: 12px;
+  }
+  .trendingSection .trendingicon {
+    font-size: 25px;
+    left: 75%;
+  }
+  .exploreDubai .darkOverlay {
+    height: 250px;
+    width: 690px;
+  }
+  .exploreDubai .exploreView {
+    left: 40px;
+    bottom: 40px;
+  }
+  .exploreDubai .exploreView p {
+    font-size: 18px;
+  }
+  .exploreDubai .exploreView small {
+    font-size: 10px;
+    padding-right: 130px;
+    margin-bottom: 15px;
+    margin-top: 0;
+  }
+  .exploreDubai .exploreView button {
+    font-size: 13px;
+    height: 35px;
+    width: 135px;
+  }
+  .activitiesSale {
+    margin-top: 100px;
+  }
+  .activitiesSale .saleDiscount {
+    height: 20px;
+    width: 40px;
+    left: 65%;
+    font-size: 11px;
+    border-radius: 7px;
+  }
+  .activitiesSale .cards .card .card-body .category-name p {
+    font-size: 8px;
+  }
+  .activitiesSale .cards .card .card-body .prices small {
+    font-size: 8px;
+  }
+  .activitiesSale .cards .card .card-body .prices p {
+    font-size: 12px;
+  }
+  .prelastSection .ratedActives p {
+    font-size: 30px;
+  }
+  .prelastSection .ratedActives small,
+  .prelastSection .ratedActives a {
+    font-size: 13px;
+  }
+  .prelastSection .cards .imageCard .rateIMG {
+    height: 165px;
+  }
+  .prelastSection .cards .ratedCard .card-body {
+    width: 220px;
+  }
+  .prelastSection .cards .ratedCard .card-body .rated-name p {
+    font-size: 12px;
+  }
+  .prelastSection .cards .ratedCard .card-body .card-text {
+    font-size: 8px !important;
+  }
+  .prelastSection .cards .ratedCard .card-body .author {
+    margin-top: 15px;
+  }
+  footer {
+    height: 400px;
+  }
+  .flexable-items {
+    padding: 30px;
+    border-bottom: 2px solid #dddddd;
+  }
+  .flexable-items .leftSide p {
+    font-size: 10px;
+    line-height: 15px;
+    width: 288px;
+  }
+  .flexable-items .leftSide select {
+    height: 40px;
+    width: 175px;
+    margin-bottom: 50px;
+  }
+  .flexable-items .social-media {
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  .flexable-items .social-media li {
+    font-size: 12px;
+    height: 30px;
+    width: 30px;
+  }
+  .flexable-items .rightSide .navListItems li {
+    font-size: 10px;
+    margin-left: 13px;
+  }
+  .flexable-items .rightSide .subscribe p {
+    font-size: 18px;
+    margin-top: 10px;
+  }
+  .flexable-items .rightSide .subscribe .form {
+    width: 300px;
+    padding: 5px 5px 5px 10px;
+  }
+  .flexable-items .rightSide .subscribe .form button {
+    height: 36px;
+    width: 80px;
+    border-radius: 12px;
+    font-size: 12px;
+  }
+  .flexable-items .rightSide .lastText {
+    font-size: 12px;
+    line-height: 15px;
+    width: 235px;
+    margin-top: 25px;
+  }
+  .last-footerText {
+    font-size: 11px;
+    padding: 25px 0;
+    border-top: none;
+    -webkit-box-align: start !important;
+        -ms-flex-align: start !important;
+            align-items: flex-start !important;
+  }
+}
+
+@media screen and (max-width: 540px) {
+  .carouselSection .carousel-indicators [data-bs-target] {
+    width: 5px;
+    height: 5px !important;
+  }
+  .carouselSection .carousel-indicators {
+    right: unset !important;
+    left: 0;
+    bottom: 20px;
+  }
+  .carouselSection .carousel-indicators .active {
+    width: 20px !important;
+  }
+  .search-section p {
+    font-size: 20px;
+  }
+  .search-section div .searchbar {
+    width: 400px;
+    height: 30px;
+    padding: 10px;
+  }
+  .search-section div .searchbar input {
+    font-size: 10px;
+  }
+  .search-section div .searchbar ul {
+    display: none;
+  }
+  .search-section div .searchbar button {
+    height: 20px;
+    width: 60px;
+  }
+  .search-section div .searchbar button .btnElems i,
+  .search-section div .searchbar button .btnElems p {
+    font-size: 8px;
+  }
+  .categories {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -ms-flex-line-pack: space-aaround;
+        align-content: space-aaround;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  .categories .waterSport,
+  .categories .aquapart,
+  .categories .climbing,
+  .categories .hicking,
+  .categories .helicopter,
+  .categories .zazaland {
+    width: 220px;
+    height: 95px;
+  }
+  .categories .cards {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  .acitivity .cards,
+  .trendingSection .cards,
+  .activitiesSale .cards,
+  .prelastSection .cards {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  .acitivity .cards .card,
+  .trendingSection .cards .card,
+  .activitiesSale .cards .card,
+  .prelastSection .cards .card {
+    margin-bottom: 50px;
+  }
+  .acitivity .cards .card .card-body .card-title,
+  .trendingSection .cards .card .card-body .card-title,
+  .activitiesSale .cards .card .card-body .card-title,
+  .prelastSection .cards .card .card-body .card-title {
+    font-size: 15px;
+  }
+  .acitivity .cards .card .card-body .categ-name p,
+  .acitivity .cards .card .card-body .category-name p,
+  .trendingSection .cards .card .card-body .categ-name p,
+  .trendingSection .cards .card .card-body .category-name p,
+  .activitiesSale .cards .card .card-body .categ-name p,
+  .activitiesSale .cards .card .card-body .category-name p,
+  .prelastSection .cards .card .card-body .categ-name p,
+  .prelastSection .cards .card .card-body .category-name p {
+    font-size: 18px;
+  }
+  .acitivity .cards .card .card-body .card-text,
+  .trendingSection .cards .card .card-body .card-text,
+  .activitiesSale .cards .card .card-body .card-text,
+  .prelastSection .cards .card .card-body .card-text {
+    font-size: 15px;
+  }
+  .acitivity .cards .card .card-body .author img,
+  .trendingSection .cards .card .card-body .author img,
+  .activitiesSale .cards .card .card-body .author img,
+  .prelastSection .cards .card .card-body .author img {
+    height: 50px;
+    width: 50px;
+    border-radius: 50px;
+  }
+  .acitivity .cards .card .card-body .author p,
+  .trendingSection .cards .card .card-body .author p,
+  .activitiesSale .cards .card .card-body .author p,
+  .prelastSection .cards .card .card-body .author p {
+    font-size: 15px;
+  }
+  .trendingSection {
+    margin-top: 80px;
+  }
+  .trendingSection .trendingicon {
+    font-size: 60px;
+    left: 80%;
+  }
+  .exploreDubai .darkOverlay {
+    height: 280px;
+    width: 490px;
+  }
+  .activitiesSale .saleDiscount {
+    height: 40px;
+    width: 70px;
+    left: 80%;
+    font-size: 17px;
+    border-radius: 10px;
+  }
+  .prelastSection .cards .imageCard .rateIMG {
+    height: 228px;
+  }
+  .prelastSection .cards .ratedCard .card-body .author img {
+    height: 25px;
+    width: 25px;
+  }
+  .prelastSection .cards .ratedCard .card-body .author p {
+    font-size: 10px;
+  }
+  .flexable-items {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .flexable-items .leftSide .social-media {
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+  }
+  .flexable-items .leftSide .social-media li {
+    margin-right: 10px;
+  }
+  .last-footerText {
+    font-size: 8px;
+    padding: 35px 0;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  .last-footerText p {
+    margin-right: 15px;
+  }
+  .last-footerText .link a {
+    margin-right: 5px;
+  }
+}
+/*# sourceMappingURL=style.css.map */

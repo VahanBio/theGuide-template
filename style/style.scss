@@ -1,0 +1,1124 @@
+@import './variables';
+@import './fonts';
+@import './mixins';
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    overflow-x: hidden;
+}
+
+header {
+    padding: 8px 38px;
+    .customNav {
+        .justifyEnd {
+            justify-content: flex-end;
+        }
+    }
+    .companyLogo {
+        position: relative;
+        cursor: pointer;
+        .markerIcon {
+            position: absolute;
+            left: 45%;
+            bottom: 90%;
+            i {
+                color: $lightBlue;
+            }
+        }
+        p {
+            font-family: Montserrat-Regular;
+            font-size: 35px;
+            text-transform: uppercase;
+            color: $green;
+            margin-bottom: 0px;
+            margin-top: 20px;
+            line-height: 30px;
+        }
+        p {
+            &:nth-child(3) {
+                font-family: Manrope-ExtraBold;
+                font-size: 10px;
+                letter-spacing: 3px;
+                color: $ShadeofGrey2;
+                margin-bottom: 0px;
+                text-align: right;
+                margin-top: 0px;
+                line-height: 10px;
+            }
+        }
+    }
+    .navListItems {
+        align-items: center;
+        li {
+            font-family: Manrope-ExtraBold;
+            font-size: 14px;
+            margin-left: 10px;
+            .active {
+                color: $darkGrey2!important;
+            }
+            a {
+                .downBtn {
+                    font-size: 12px;
+                    margin-left: 10px;
+                }
+            }
+            .cartBag {
+                font-size: 25px;
+            }
+        }
+        select {
+            font-family: Manrope-ExtraBold;
+            font-size: 14px;
+            border: none;
+            &:focus {
+                outline: none;
+            }
+        }
+    }
+}
+
+.container-xxl {
+    padding-right: unset!important;
+    padding-left: unset!important;
+}
+
+.carouselSection {
+    overflow-x: hidden;
+    height: 400px;
+    .carousel-indicators [data-bs-target] {
+        box-sizing: unset!important;
+        flex: none !important;
+        width: 8px;
+        height: 8px !important;
+        margin-right: 3px;
+        border-radius: 5px;
+        margin-left: 3px;
+        cursor: pointer;
+        background-color: #fff;
+        background-clip: border-box;
+        border: 0;
+        transition: all .4s ease;
+    }
+    .carousel-indicators {
+        right: unset!important;
+        left: 65px;
+        bottom: 65px;
+        .active {
+            width: 25px !important;
+            border-radius: 5px !important;
+        }
+    }
+}
+
+.search-section {
+    position: absolute;
+    bottom: 138px;
+    left: 15%;
+    @include flex-column;
+    @include item-center;
+    p {
+        font-family: DMSans-Bold;
+        font-size: 42px;
+        color: white;
+        text-align: center;
+        margin-bottom: 3rem;
+        text-shadow: 0 4px 24px rgba(0, 0, 0, 0.231);
+    }
+    div {
+        .searchbar {
+            height: 75px;
+            padding: 10px 10px 10px 30px;
+            background-color: white;
+            border-radius: 25px;
+            @include searhInput;
+            input {
+                font-family: DMSans-Regular;
+                font-size: 16px;
+                width: 270px;
+                border: none;
+                &:focus {
+                    outline: none
+                }
+            }
+            ul {
+                li {
+                    font-family: Montserrat-Regular;
+                    padding-right: 35px;
+                    padding-left: 15px;
+                    &:nth-child(2) {
+                        border-left: 2px solid $lightGrey;
+                        border-right: 2px solid $lightGrey;
+                    }
+                    a {
+                        i {
+                            margin-right: 10px;
+                        }
+                    }
+                    .active {
+                        color: $darkGrey2!important;
+                    }
+                }
+            }
+            button {
+                background-color: $green;
+                border: none;
+                border-radius: 20px;
+                height: 57px;
+                width: 140px;
+                transition: 0.3s;
+                .btnElems {
+                    display: flex;
+                    justify-content: space-evenly;
+                    align-items: center;
+                    i {
+                        font-size: 18px;
+                        color: rgb(255, 255, 255);
+                    }
+                    p {
+                        font-family: Manrope-SemiBold;
+                        font-size: 14px;
+                        text-align: center;
+                        margin-bottom: 0px;
+                    }
+                }
+                &:hover {
+                    transform: scale(0.9);
+                }
+            }
+        }
+    }
+}
+
+.categories {
+    display: flex;
+    justify-content: flex-end;
+    .waterSport {
+        background-image: url(../assets/1.png);
+        @include categoryPics;
+    }
+    .aquapart {
+        background-image: url(../assets/2.png);
+        @include categoryPics;
+    }
+    .climbing {
+        background-image: url(../assets/3.png);
+        @include categoryPics;
+    }
+    .hicking {
+        background-image: url(../assets/4.png);
+        @include categoryPics;
+    }
+    .helicopter {
+        background-image: url(../assets/5.png);
+        @include categoryPics;
+    }
+    .zazaland {
+        background-image: url(../assets/8.png);
+        @include categoryPics;
+    }
+}
+
+.marginTop {
+    margin-top: 100px;
+}
+
+.acitivty,
+.trending,
+.ratedActives {
+    margin-bottom: 50px;
+    padding-top: 50px;
+    p {
+        font-family: Manrope-ExtraBold;
+        font-size: 38px;
+        margin-bottom: 0px;
+    }
+    small {
+        font-family: Manrope-Regular;
+        color: $ShadeofGrey1;
+    }
+    a {
+        font-family: Manrope-ExtraBold;
+        font-size: 15px;
+        color: $fadedBlack;
+        text-decoration: none;
+        &:hover {
+            color: inherit;
+        }
+    }
+}
+
+.marginTop {
+    .cards {
+        .card {
+            width: 18rem;
+        }
+    }
+}
+
+.cards {
+    display: flex;
+    justify-content: flex-end;
+    .card {
+        border: none;
+        margin-right: 20px;
+        background-color: transparent;
+        cursor: pointer;
+        img {
+            margin-bottom: 10px;
+            border-radius: 20px;
+            box-shadow: 0 12px 24px 0 rgba(0, 0, 0, 0.15);
+        }
+        .scalhov {
+            transition: .4s cubic-bezier(0.165, 0.84, 0.44, 1);
+            &:hover {
+                transform: scale(1.1);
+            }
+        }
+    }
+    .card-title {
+        font-family: Manrope-Bold;
+    }
+    .categ-name {
+        @include forCategories;
+        p {
+            margin-bottom: 0px;
+            &:first-child {
+                @include categName;
+            }
+            &:nth-child(2) {
+                @include smallTextforCards;
+            }
+        }
+    }
+    .card-text {
+        margin-top: 5px;
+        font-family: Manrope-Regular;
+        color: $ShadeofGrey1;
+        font-size: 15px;
+    }
+    .author {
+        img {
+            height: 40px;
+            width: 40px;
+            margin-bottom: 0px;
+            margin-right: 5px;
+        }
+        p {
+            font-family: Manrope-Regular;
+            font-weight: bold;
+            display: inline-block;
+            margin-bottom: 0px;
+        }
+    }
+}
+
+.trendingSection {
+    margin-top: 60px;
+    background-color: $transparent;
+    .trendingicon {
+        font-size: 45px;
+        position: absolute;
+        bottom: 20px;
+        left: 80%;
+        color: white;
+    }
+}
+
+.exploreDubai {
+    &:first-child {
+        display: flex;
+        justify-content: center;
+    }
+    .darkOverlay {
+        background-image: linear-gradient(44.2deg, #000000 0%, rgba(0, 0, 0, 0) 100%), url(../assets/image.png);
+        height: 435px;
+        width: 1100px;
+        border-radius: 50px;
+        background-size: cover;
+    }
+    .exploreView {
+        @include flex-column;
+        position: absolute;
+        bottom: 70px;
+        left: 120px;
+        color: white;
+        p {
+            display: inline-block;
+            font-size: 35px;
+            font-family: Manrope-Bold;
+            margin-bottom: 0;
+            width: 315px;
+            line-height: 40px;
+        }
+        small {
+            font-family: Manrope-Regular;
+            font-size: 14px;
+            width: 350px;
+            height: 36px;
+            margin-top: 15px;
+            padding-right: 55px;
+            margin-bottom: 30px;
+        }
+        button {
+            background-color: $lightBlue;
+            border: none;
+            border-radius: 15px;
+            color: white;
+            height: 44px;
+            width: 200px;
+        }
+    }
+}
+
+.activitiesSale {
+    margin-top: 120px;
+    .saleDiscount {
+        @include item-center;
+        font-size: 17px;
+        font-family: Montserrat-Bold;
+        position: absolute;
+        bottom: 25px;
+        left: 75%;
+        background-color: white;
+        border-radius: 10px;
+        height: 36px;
+        width: 64px;
+    }
+    .category-name {
+        @include forCategories;
+        p {
+            margin-bottom: 0px;
+            &:first-child {
+                font-family: Montserrat-Bold;
+                font-size: 15px;
+                color: $green;
+                text-transform: uppercase;
+            }
+        }
+        .prices {
+            display: flex;
+            align-items: center;
+            small {
+                text-decoration-line: line-through;
+                font-size: 12px;
+                font-family: Manrope-Regular;
+                margin-right: 5px
+            }
+            p {
+                @include smallTextforCards;
+            }
+        }
+    }
+}
+
+.prelastSection {
+    overflow-x: hidden;
+    background-color: $transparent;
+    border-bottom: 2px solid $lightGrey;
+}
+
+.imageCard {
+    flex-direction: row!important;
+    margin-right: 0!important;
+    .rateIMG {
+        height: 400px;
+        width: 293.45px;
+        margin-right: 30px;
+        transition: 0.9s cubic-bezier(0, 2.34, 0.36, 0.42);
+        &:hover {
+            transform: scale(1.1);
+        }
+    }
+}
+
+.ratedCard {
+    .card-body {
+        width: 305px;
+        .rated-name {
+            border-bottom: 1px solid $lightGrey;
+            padding-bottom: 15px;
+            p {
+                margin-bottom: 0px;
+                &:first-child {
+                    @include categName;
+                }
+                &:nth-child(2) {
+                    margin-top: 10px;
+                    @include smallTextforCards;
+                }
+            }
+        }
+        .author {
+            margin-top: 50px;
+        }
+    }
+}
+
+footer {
+    height: 600px;
+}
+
+.flexable-items {
+    padding: 100px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.leftSide {
+    p {
+        font-size: 14px;
+        color: $fadedBlack;
+        font-family: Manrope-Regular;
+        width: 360px;
+        letter-spacing: 0.05px;
+        line-height: 19px;
+    }
+    select {
+        height: 44px;
+        width: 212px;
+        border-radius: 10px;
+        border-color: $lightGrey;
+        color: $fadedBlack;
+        padding-left: 15px;
+        margin-top: 25px;
+        margin-bottom: 100px;
+        &:focus {
+            outline: none;
+        }
+    }
+    .social-media {
+        list-style: none;
+        padding-left: 0;
+        display: flex;
+        justify-content: space-around;
+        li {
+            background-color: $green;
+            height: 42px;
+            width: 42px;
+            border-radius: 10px;
+            font-size: 20px;
+            @include item-center;
+            transition: 0.3s;
+            a {
+                color: white;
+            }
+            &:hover {
+                transform: scale(1.2)
+            }
+        }
+    }
+}
+
+.rightSide {
+    @include flex-column;
+    align-items: flex-end;
+    .navListItems {
+        flex-direction: row;
+        li {
+            font-family: Manrope-ExtraBold;
+            font-size: 14px;
+            margin-left: 15px;
+            .active {
+                color: $darkGrey2!important;
+            }
+        }
+    }
+    .subscribe {
+        p {
+            font-family: Manrope-ExtraBold;
+            font-size: 30px;
+            margin-top: 50px;
+            text-align: right;
+        }
+        .form {
+            width: 480px;
+            height: 60px;
+            border: 1px solid $lightGrey;
+            border-radius: 20px;
+            padding: 10px 10px 10px 20px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            .subfield {
+                input {
+                    border: none;
+                    font-family: DMSans-Regular;
+                    font-size: 15px;
+                    &:focus {
+                        outline: none
+                    }
+                }
+            }
+            button {
+                background-color: $green;
+                color: white;
+                border: none;
+                height: 48px;
+                width: 135px;
+                border-radius: 15px;
+                font-family: Manrope-SemiBold;
+                font-size: 15px;
+                transition: 0.3s;
+                &:hover {
+                    transform: scale(0.9);
+                }
+            }
+        }
+    }
+    .lastText {
+        font-size: 16px;
+        color: $ShadeofGrey1;
+        line-height: 20px;
+        width: 290px;
+        text-align: right;
+        margin-top: 25px;
+    }
+}
+
+.last-footerText {
+    margin: 0 100px;
+    padding: 40px 0;
+    border-top: 2px solid $lightGrey;
+    @include searhInput;
+    font-size: 13px;
+    font-family: Manrope-Regular;
+    color: $darkGrey;
+    a {
+        color: $darkGrey;
+        text-decoration: none;
+        margin-right: 15px;
+        &:hover {
+            color: inherit;
+        }
+    }
+}
+
+@media only screen and (max-width: 960px) {
+    .search-section {
+        left: 5%;
+        bottom: 110px;
+        p {
+            margin-bottom: 0;
+        }
+        .searchbar {
+            ul {
+                flex-wrap: nowrap;
+                li {
+                    a {
+                        padding: 0;
+                    }
+                }
+            }
+        }
+    }
+    .cards {
+        .card {
+            width: 28rem!important;
+            .card-body {
+                .card-title {
+                    font-size: 17px;
+                }
+                .categ-name {
+                    p {
+                        font-size: 12px;
+                    }
+                }
+                .card-text {
+                    font-size: 10px;
+                }
+                .author {
+                    p {
+                        font-size: 11px;
+                    }
+                }
+                .category-name {
+                    p {
+                        font-size: 12px;
+                    }
+                }
+            }
+        }
+    }
+    .exploreDubai {
+        .darkOverlay {
+            height: 425px;
+            width: 960px;
+        }
+    }
+    .trendingSection {
+        .trendingicon {
+            font-size: 40px;
+            left: 78%;
+        }
+    }
+    .activitiesSale {
+        .saleDiscount {
+            height: 30px;
+            width: 60px;
+            left: 70%;
+            font-size: 15px;
+        }
+    }
+    .prelastSection {
+        .cards {
+            justify-content: space-between;
+            .imageCard {
+                .rateIMG {
+                    height: 280px;
+                    margin-right: 0;
+                }
+            }
+        }
+        .card-text {
+            font-size: 11px!important;
+        }
+    }
+    .flexable-items {
+        .leftSide {
+            .social-media {
+                justify-content: space-between;
+            }
+        }
+        .rightSide {
+            .subscribe {
+                p {
+                    font-size: 22px;
+                    margin-top: 20px;
+                }
+                .form {
+                    width: 375px;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 720px) {
+    .carouselSection {
+        height: 300px;
+        .carousel-indicators {
+            bottom: 20px;
+        }
+    }
+    .search-section {
+        left: 10%;
+        bottom: 53px;
+        p {
+            margin-bottom: 0;
+            font-size: 28px;
+        }
+        div {
+            .searchbar {
+                width: 538px;
+                height: 60px;
+                input {
+                    font-size: 12px;
+                    width: 208px;
+                }
+                ul {
+                    flex-wrap: nowrap;
+                    li {
+                        padding: 0 14px;
+                        a {
+                            padding: 0;
+                            font-size: 8px;
+                            i {
+                                margin-right: 2px;
+                            }
+                        }
+                    }
+                }
+                button {
+                    height: 40px;
+                    width: 70px;
+                    .btnElems {
+                        i,
+                        p {
+                            font-size: 12px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .categories {
+        .waterSport,
+        .aquapart,
+        .climbing,
+        .hicking,
+        .helicopter,
+        .zazaland {
+            width: 188px;
+            height: 53px;
+            background-size: cover;
+        }
+    }
+    .marginTop {
+        margin-top: 50px;
+    }
+    .acitivty,
+    .trending {
+        p {
+            font-size: 30px;
+        }
+        small,
+        a {
+            font-size: 13px;
+        }
+    }
+    .cards {
+        .card {
+            width: 28rem!important;
+            .card-body {
+                .card-title {
+                    font-size: 9px;
+                }
+                .categ-name {
+                    p {
+                        font-size: 8px;
+                    }
+                }
+                .card-text {
+                    font-size: 7px;
+                }
+                .author {
+                    img {
+                        height: 20px;
+                        width: 20px;
+                    }
+                    p {
+                        font-size: 9px;
+                    }
+                }
+                .category-name {
+                    p {
+                        font-size: 12px;
+                    }
+                }
+            }
+        }
+    }
+    .trendingSection {
+        .trendingicon {
+            font-size: 25px;
+            left: 75%;
+        }
+    }
+    .exploreDubai {
+        .darkOverlay {
+            height: 250px;
+            width: 690px;
+        }
+        .exploreView {
+            left: 40px;
+            bottom: 40px;
+            p {
+                font-size: 18px;
+            }
+            small {
+                font-size: 10px;
+                padding-right: 130px;
+                margin-bottom: 15px;
+                margin-top: 0;
+            }
+            button {
+                font-size: 13px;
+                height: 35px;
+                width: 135px;
+            }
+        }
+    }
+    .activitiesSale {
+        margin-top: 100px;
+        .saleDiscount {
+            height: 20px;
+            width: 40px;
+            left: 65%;
+            font-size: 11px;
+            border-radius: 7px;
+        }
+        .cards {
+            .card {
+                .card-body {
+                    .category-name {
+                        p {
+                            font-size: 8px;
+                        }
+                    }
+                    .prices {
+                        small {
+                            font-size: 8px;
+                        }
+                        p {
+                            font-size: 12px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .prelastSection {
+        .ratedActives {
+            p {
+                font-size: 30px;
+            }
+            small,
+            a {
+                font-size: 13px;
+            }
+        }
+        .cards {
+            .imageCard {
+                .rateIMG {
+                    height: 165px;
+                }
+            }
+            .ratedCard {
+                .card-body {
+                    width: 220px;
+                    .rated-name {
+                        p {
+                            font-size: 12px;
+                        }
+                    }
+                    .card-text {
+                        font-size: 8px!important;
+                    }
+                    .author {
+                        margin-top: 15px;
+                    }
+                }
+            }
+        }
+    }
+    footer {
+        height: 400px;
+    }
+    .flexable-items {
+        padding: 30px;
+        border-bottom: 2px solid $lightGrey;
+        .leftSide {
+            p {
+                font-size: 10px;
+                line-height: 15px;
+                width: 288px;
+            }
+            select {
+                height: 40px;
+                width: 175px;
+                margin-bottom: 50px;
+            }
+        }
+        .social-media {
+            justify-content: space-between;
+            li {
+                font-size: 12px;
+                height: 30px;
+                width: 30px;
+            }
+        }
+        .rightSide {
+            .navListItems {
+                li {
+                    font-size: 10px;
+                    margin-left: 13px;
+                }
+            }
+            .subscribe {
+                p {
+                    font-size: 18px;
+                    margin-top: 10px;
+                }
+                .form {
+                    width: 300px;
+                    padding: 5px 5px 5px 10px;
+                    button {
+                        height: 36px;
+                        width: 80px;
+                        border-radius: 12px;
+                        font-size: 12px;
+                    }
+                }
+            }
+            .lastText {
+                font-size: 12px;
+                line-height: 15px;
+                width: 235px;
+                margin-top: 25px;
+            }
+        }
+    }
+    .last-footerText {
+        font-size: 11px;
+        padding: 25px 0;
+        border-top: none;
+        align-items: flex-start!important;
+    }
+}
+
+@media screen and (max-width: 540px) {
+    .carouselSection {
+        .carousel-indicators [data-bs-target] {
+            width: 5px;
+            height: 5px !important;
+        }
+        .carousel-indicators {
+            right: unset!important;
+            left: 0;
+            bottom: 20px;
+            .active {
+                width: 20px !important;
+            }
+        }
+    }
+    .search-section {
+        p {
+            font-size: 20px;
+        }
+        div {
+            .searchbar {
+                width: 400px;
+                height: 30px;
+                padding: 10px;
+                input {
+                    font-size: 10px;
+                }
+                ul {
+                    display: none;
+                }
+                button {
+                    height: 20px;
+                    width: 60px;
+                    .btnElems {
+                        i,
+                        p {
+                            font-size: 8px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .categories {
+        flex-wrap: wrap;
+        align-content: space-aaround;
+        justify-content: space-between;
+        .waterSport,
+        .aquapart,
+        .climbing,
+        .hicking,
+        .helicopter,
+        .zazaland {
+            width: 220px;
+            height: 95px;
+        }
+        .cards {
+            flex-wrap: wrap;
+        }
+    }
+    .acitivity,
+    .trendingSection,
+    .activitiesSale,
+    .prelastSection {
+        .cards {
+            flex-wrap: wrap;
+            .card {
+                margin-bottom: 50px;
+                .card-body {
+                    .card-title {
+                        font-size: 15px;
+                    }
+                    .categ-name,
+                    .category-name {
+                        p {
+                            font-size: 18px;
+                        }
+                    }
+                    .card-text {
+                        font-size: 15px;
+                    }
+                    .author {
+                        img {
+                            height: 50px;
+                            width: 50px;
+                            border-radius: 50px;
+                        }
+                        p {
+                            font-size: 15px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .trendingSection {
+        margin-top: 80px;
+        .trendingicon {
+            font-size: 60px;
+            left: 80%;
+        }
+    }
+    .exploreDubai {
+        .darkOverlay {
+            height: 280px;
+            width: 490px;
+        }
+    }
+    .activitiesSale {
+        .saleDiscount {
+            height: 40px;
+            width: 70px;
+            left: 80%;
+            font-size: 17px;
+            border-radius: 10px;
+        }
+    }
+    .prelastSection {
+        .cards {
+            .imageCard {
+                .rateIMG {
+                    height: 228px;
+                }
+            }
+            .ratedCard {
+                .card-body {
+                    .author {
+                        img {
+                            height: 25px;
+                            width: 25px;
+                        }
+                        p {
+                            font-size: 10px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .flexable-items {
+        flex-direction: column;
+        .leftSide {
+            .social-media {
+                justify-content: flex-start;
+                li {
+                    margin-right: 10px;
+                }
+            }
+        }
+    }
+    .last-footerText {
+        font-size: 8px;
+        padding: 35px 0;
+        justify-content: space-between;
+        p {
+            margin-right: 15px;
+        }
+        .link {
+            a {
+                margin-right: 5px;
+            }
+        }
+    }
+}
